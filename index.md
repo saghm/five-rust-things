@@ -79,9 +79,9 @@ struct Foo {
     y: i32,
 }
 
-let x = Foo { x: 1, y: 2 };
-let y = Foo { x: 2, ..x };
-let z = Foo { x: 2, ..Default::default() };
+let a = Foo { x: 1, y: 2 };
+let b = Foo { x: 2, ..a };
+let c = Foo { x: 2, ..Default::default() };
 ```
 
 ## Pattern match guards
