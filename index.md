@@ -65,7 +65,7 @@ impl<T> VerySimpleList<T> {
 
 Sometimes, you want to create a copy of a struct with one or
 more fields different. While you can do this by manually cloning
-and mutating the clone, there's an easier way! Using the `..`
+and mutating the result, there's an easier way! Using the `..`
 operator in a struct literal followed by an instance of the
 struct will initialize the remaining fields to those of the
 instance. Conveniently, this doesn't rely on `Clone` being
