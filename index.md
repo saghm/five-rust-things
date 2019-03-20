@@ -134,7 +134,7 @@ fn divide_opt(x: Option<i32>, y: Option<i32>) -> Option<i32> {
 ## Padding format operator
 
 Want to left-pad in Rust? No need for an external package!
-Simply use the `:<` format operator followed by the length of
+Simply use the `:>` format operator followed by the length of
 the padding, and you'll get it!
 
 ```rust
