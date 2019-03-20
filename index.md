@@ -95,7 +95,7 @@ fn divide_opt(x: Option<i32>, y: Option<i32>) -> Option<i32> {
     match (x, y) {
         (Some(i), Some(0)) => None
         (Some(i), Some(j)) => Some(i / j)
-	    _ => None,
+        _ => None,
     }
 }
 ```
@@ -112,7 +112,7 @@ fn divide_opt(x: Option<i32>, y: Option<i32>) -> Option<i32> {
                 Some(i / j)
             }
         }
-	    _ => None,
+        _ => None,
     }
 }
 ```
@@ -126,7 +126,7 @@ have a trailing conditional expression condition called a
 fn divide_opt(x: Option<i32>, y: Option<i32>) -> Option<i32> {
     match (x, y) {
         (Some(i), Some(j)) if j != 0 => Some(i / j),
-	    _ => None,
+        _ => None,
     }
 }
 ```
