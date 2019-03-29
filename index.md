@@ -6,7 +6,7 @@
 
 Normally when using `Debug` to print something, the `:?` format
 operator is used. However, there are other operators that can be
-used as well. One useful one is `:#?`, which formats using
+used as well! One useful one is `:#?`, which formats using
 newlines and indentation to make things more readable.
 
 ```rust
@@ -73,7 +73,6 @@ implemented on the struct.
 
 ```rust
 #[derive(Debug, Default)]
-
 struct Foo {
     x: i32,
     y: i32,
@@ -86,9 +85,9 @@ let c = Foo { x: 2, ..Default::default() };
 
 ## Pattern match guards
 
-Sometimes when pattern magic, the cases you want to handle
+Sometimes when pattern matching, the cases you want to handle
 don't map exactly to the patterns of the data you're matching
-on. For instance, you might write some code like this::
+on. For instance, you might write some code like this:
 
 ```rust
 fn divide_opt(x: Option<i32>, y: Option<i32>) -> Option<i32> {
@@ -120,7 +119,6 @@ fn divide_opt(x: Option<i32>, y: Option<i32>) -> Option<i32> {
 However, there's a better way than either of these! Patterns can
 have a trailing conditional expression condition called a
 "guard":
-
 
 ```rust
 fn divide_opt(x: Option<i32>, y: Option<i32>) -> Option<i32> {
